@@ -33,7 +33,7 @@ jobs:
         run: yarn test:all
       - name: Set NPM
         run: |
-          echo //registry.npmjs.org/:_authToken=$NPM_TOKEN | tee .npmrc $HOME/.npmrc > /dev/null
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
           npm whoami
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
