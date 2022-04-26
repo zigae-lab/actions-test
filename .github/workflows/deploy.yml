@@ -20,7 +20,7 @@ jobs:
         run: |
           git config --global user.name "zi-gae"
           git config --global user.email "doscmdev@gmail.com"
-          git remote set-url origin https://zi-gae:$GH_TOKEN@github.com/myrealtrip/actions-test.git
+          git remote set-url origin https://zi-gae:$GH_TOKEN@github.com/zigae-lab/actions-test.git
         env:
           GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       - name: Pull main branch
