@@ -5,14 +5,17 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
+  "publishConfig": {
+    "access": "@myrealtrip"
+  },
   "command": {
     "version": {
       "message": "chore(release): 라이브러리 배포 [skip ci]",
-      "registry": "https://registry.npmjs.org/"
+      "registry": "https://npm.pkg.github.com/"
     },
     "publish": {
       "graphType": "all",
-      "registry": "https://registry.npmjs.org/"
+      "registry": "https://npm.pkg.github.com/"
     }
   }
 }
