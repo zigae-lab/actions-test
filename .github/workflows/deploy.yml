@@ -18,9 +18,9 @@ jobs:
           node-version: 12
       - name: Set Git User
         run: |
-          git config --global user.name "lubycon-admin"
-          git config --global user.email "lubycon@gmail.com"
-          git remote set-url origin https://lubycon-admin:$GH_TOKEN@github.com/Lubycon/lubycon-frontend-libraries.git
+          git config --global user.name "zi-gae"
+          git config --global user.email "doscmdev@gmail.com"
+          git remote set-url origin https://zi-gae:$GH_TOKEN@github.com/myrealtrip/web-packages.git
         env:
           GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       - name: Pull main branch
