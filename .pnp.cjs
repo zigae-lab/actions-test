@@ -5090,6 +5090,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.44"],\
             ["cross-env", "npm:5.2.1"],\
             ["html-react-parser", "virtual:e4a3e29fef6bcbc5eb4cb94add717fc6768d0f11ff4e7149aeffdb3b0de7e75abba9ce77132fa3fb645211686cdf5c0c82fdad998d55ea9dbf339dc5a31b0b62#npm:1.4.12"],\
+            ["htmlparser2", "npm:8.0.0"],\
             ["rimraf", "npm:2.7.1"],\
             ["rollup", "npm:2.70.2"],\
             ["rollup-plugin-commonjs", "virtual:e4a3e29fef6bcbc5eb4cb94add717fc6768d0f11ff4e7149aeffdb3b0de7e75abba9ce77132fa3fb645211686cdf5c0c82fdad998d55ea9dbf339dc5a31b0b62#npm:10.1.0"],\
@@ -7696,6 +7697,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["entities", "npm:2.2.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/dom-serializer-npm-2.0.0-378ebc7200-cd1810544f.zip/node_modules/dom-serializer/",\
+          "packageDependencies": [\
+            ["dom-serializer", "npm:2.0.0"],\
+            ["domelementtype", "npm:2.3.0"],\
+            ["domhandler", "npm:5.0.2"],\
+            ["entities", "npm:4.3.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["domelementtype", [\
@@ -7725,6 +7736,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["domelementtype", "npm:2.3.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:5.0.2", {\
+          "packageLocation": "./.yarn/cache/domhandler-npm-5.0.2-a476439fc2-798cf1c0a5.zip/node_modules/domhandler/",\
+          "packageDependencies": [\
+            ["domhandler", "npm:5.0.2"],\
+            ["domelementtype", "npm:2.3.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["domutils", [\
@@ -7735,6 +7754,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dom-serializer", "npm:1.4.1"],\
             ["domelementtype", "npm:2.3.0"],\
             ["domhandler", "npm:4.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:3.0.1", {\
+          "packageLocation": "./.yarn/cache/domutils-npm-3.0.1-7937818218-23aa7a8405.zip/node_modules/domutils/",\
+          "packageDependencies": [\
+            ["domutils", "npm:3.0.1"],\
+            ["dom-serializer", "npm:2.0.0"],\
+            ["domelementtype", "npm:2.3.0"],\
+            ["domhandler", "npm:5.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7903,6 +7932,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/entities-npm-3.0.1-21eeb201ba-aaf7f12033.zip/node_modules/entities/",\
           "packageDependencies": [\
             ["entities", "npm:3.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.3.0", {\
+          "packageLocation": "./.yarn/cache/entities-npm-4.3.0-65ed747e49-f6abacfe1f.zip/node_modules/entities/",\
+          "packageDependencies": [\
+            ["entities", "npm:4.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9686,6 +9722,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["domhandler", "npm:4.3.1"],\
             ["domutils", "npm:2.8.0"],\
             ["entities", "npm:3.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:8.0.0", {\
+          "packageLocation": "./.yarn/cache/htmlparser2-npm-8.0.0-8c97d27d9e-2e89e92d86.zip/node_modules/htmlparser2/",\
+          "packageDependencies": [\
+            ["htmlparser2", "npm:8.0.0"],\
+            ["domelementtype", "npm:2.3.0"],\
+            ["domhandler", "npm:5.0.2"],\
+            ["domutils", "npm:3.0.1"],\
+            ["entities", "npm:4.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\

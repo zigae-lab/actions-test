@@ -2,7 +2,7 @@
   "name": "@zigae-lab/react",
   "description": "루비콘 팀의 리액트 라이브러리.",
   "sideEffects": false,
-  "version": "1.23.5",
+  "version": "1.0.0",
   "keywords": [
     "lubycon",
     "react"
@@ -23,11 +23,6 @@
     "start": "rollup -c rollup.config.js -w",
     "typecheck": "tsc --noEmit",
     "test": "echo '@lubycon/react: 테스트가 없습니다'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zigae-lab/actions-test.git",
-    "directory": "packages/react"
   },
   "devDependencies": {
     "@types/node": "^10.11.0",
