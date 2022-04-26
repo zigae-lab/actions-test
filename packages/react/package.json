@@ -24,6 +24,11 @@
     "typecheck": "tsc --noEmit",
     "test": "echo '@lubycon/react: 테스트가 없습니다'"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zigae-lab/actions-test.git",
+    "directory": "packages/react"
+  },
   "devDependencies": {
     "@types/node": "^10.11.0",
     "@types/react": "^17.0.13",

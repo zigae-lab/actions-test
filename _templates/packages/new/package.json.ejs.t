@@ -2,7 +2,7 @@
 to: packages/<%= name %>/package.json
 ---
 {
-  "name": "<%= name %>",
+  "name": "echo '@zigae-lab/<%= name %>'"
   "description": "<%= description %>",
   "sideEffects": false,
   "version": "1.0.0",
@@ -18,6 +18,11 @@ to: packages/<%= name %>/package.json
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
     "typings": "dist/types/index.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zigae-lab/actions-test.git",
+    "directory": "echo 'packages/<%= name %>'"
   },
   "scripts": {
     "lint": "eslint . --ext .ts,.tsx",

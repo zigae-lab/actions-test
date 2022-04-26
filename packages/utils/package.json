@@ -20,6 +20,11 @@
     "typecheck": "tsc --noEmit",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zigae-lab/actions-test.git",
+    "directory": "packages/utils"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
