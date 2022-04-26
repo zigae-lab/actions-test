@@ -1,41 +1,114 @@
 <p align="center">
-  <img width="150" src="https://assets.lubycon.io/logo/symbol-color.svg" alt="Lubycon logo">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
-<h1 align="center">Lubycon Frontend Libraries</h1>
+<h3 align="center">actions-test</h3>
 
-루비콘에서 사용하는 모든 프론트엔드 라이브러리가 모여있는 모노레포지토리입니다.
-루비콘에 소속된 누구나 자유롭게 자신만의 라이브러리를 편하게 만들어 보실 수 있도록 Rollup을 사용한 빌드 설정 및 CI/CD까지 모두 세팅되어있습니다.
+<div align="center">
 
-## Resources
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-- [Documentation](https://fe-lib.lubycon.io/)
-- [Temen Changelog](https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/CHANGELOG.md)
-- [React Changelog](https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/react/CHANGELOG.md)
-- [Logger Changelog](https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/logger/CHANGELOG.md)
-- [Borwser-toolkit Changelog](https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/browser-toolkit/CHANGELOG.md)
+</div>
 
-## Installation
+---
 
-```sh
-$ git clone https://github.com/Lubycon/lubycon-frontend-libraries.git
-$ cd lubycon-frontend-libraries
-$ yarn
+<p align="center"> Few lines describing your project.
+    <br> 
+</p>
+
+## 📝 Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
+
+## 🧐 About <a name = "about"></a>
+
+Write about 1-2 paragraphs describing the purpose of your project.
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them.
+
+```
+Give examples
 ```
 
-## Add new Package
+### Installing
 
-```sh
-$ yarn new-package
-? 패키지 이름을 입력해주세요. › temen
-? 패키지 설명을 입력해주세요. › 테슬라 떡상 기원을 외치는 라이브러리입니다.
+A step by step series of examples that tell you how to get a development env running.
 
-Loaded templates: _templates
-  added: packages/temen/src/index.ts
-  added: packages/temen/package.json
-  added: packages/temen/README.md
-  added: packages/temen/rollup.config.js
-  added: packages/temen/.vscode/settings.json
-  added: packages/temen/tsconfig.json
-Done.
+Say what the step will be
+
 ```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo.
+
+## 🔧 Running the tests <a name = "tests"></a>
+
+Explain how to run the automated tests for this system.
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## 🎈 Usage <a name="usage"></a>
+
+Add notes about how to use the system.
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+Add additional notes about how to deploy this on a live system.
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Express](https://expressjs.com/) - Server Framework
+- [VueJs](https://vuejs.org/) - Web Framework
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+
+See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- References

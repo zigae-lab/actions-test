@@ -2,5 +2,5 @@
 to: packages/<%= name %>/README.md
 ---
 
-# @lubycon/<%= name %>
+# @zigae-lab/<%= name %>
 <%= description %>

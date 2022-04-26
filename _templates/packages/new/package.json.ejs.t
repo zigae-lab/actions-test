@@ -7,7 +7,7 @@ to: packages/<%= name %>/package.json
   "sideEffects": false,
   "version": "1.0.0",
   "keywords": [
-    "lubycon",
+    "zigae-lab",
     "<%= name %>"
   ],
   "typings": "dist/types/index.d.ts",
