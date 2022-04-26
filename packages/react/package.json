@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/zigae-lab/actions-test.git",
-    "directory": "packages/utils"
+    "directory": "packages/react"
   },
   "devDependencies": {
     "@types/node": "^10.11.0",
