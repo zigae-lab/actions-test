@@ -3680,6 +3680,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zigae-lab/utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@zigae-lab/utils@workspace:packages/utils"
+  dependencies:
+    "@babel/core": ^7.15.5
+    "@babel/preset-env": ^7.15.6
+    "@babel/preset-typescript": ^7.15.0
+    "@types/amplitude-js": ^8.0.0
+    "@types/jest": ^27.0.1
+    "@types/node": ^10.11.0
+    babel-jest: ^27.2.0
+    cross-env: ^5.2.0
+    cross-fetch: ^3.1.4
+    date-fns: ^2.22.1
+    jest: ^27.2.0
+    rimraf: ^2.6.2
+    rollup: ^2.38.5
+    rollup-plugin-commonjs: ^10.1.0
+    rollup-plugin-json: ^3.1.0
+    rollup-plugin-pnp-resolve: ^2.0.0
+    rollup-plugin-sourcemaps: ^0.4.2
+    rollup-plugin-typescript2: ^0.30.0
+    tslib: ^2.3.0
+    typescript: ^4.3.5
+  languageName: unknown
+  linkType: soft
+
 "@zkochan/cmd-shim@npm:^3.1.0":
   version: 3.1.0
   resolution: "@zkochan/cmd-shim@npm:3.1.0"
@@ -13697,33 +13724,6 @@ __metadata:
   checksum: 75e74c46213e49e8d6a85cef942dcbfd8abf2389e789eddfde10e354349778cfca36fe33fa7c74a3ff1c7170462a7f856d5471bd69b06eb37a69362ffe21434e
   languageName: node
   linkType: hard
-
-"utils@workspace:packages/utils":
-  version: 0.0.0-use.local
-  resolution: "utils@workspace:packages/utils"
-  dependencies:
-    "@babel/core": ^7.15.5
-    "@babel/preset-env": ^7.15.6
-    "@babel/preset-typescript": ^7.15.0
-    "@types/amplitude-js": ^8.0.0
-    "@types/jest": ^27.0.1
-    "@types/node": ^10.11.0
-    babel-jest: ^27.2.0
-    cross-env: ^5.2.0
-    cross-fetch: ^3.1.4
-    date-fns: ^2.22.1
-    jest: ^27.2.0
-    rimraf: ^2.6.2
-    rollup: ^2.38.5
-    rollup-plugin-commonjs: ^10.1.0
-    rollup-plugin-json: ^3.1.0
-    rollup-plugin-pnp-resolve: ^2.0.0
-    rollup-plugin-sourcemaps: ^0.4.2
-    rollup-plugin-typescript2: ^0.30.0
-    tslib: ^2.3.0
-    typescript: ^4.3.5
-  languageName: unknown
-  linkType: soft
 
 "uuid@npm:^3.0.1, uuid@npm:^3.3.2":
   version: 3.4.0
