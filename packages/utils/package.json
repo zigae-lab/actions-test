@@ -2,7 +2,7 @@
   "name": "@zigae-lab/utils",
   "description": "마이리얼트립 프론트엔드 팀의 유틸 라이브러리",
   "sideEffects": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "typings": "dist/types/index.d.ts",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
