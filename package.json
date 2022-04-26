@@ -1,0 +1,71 @@
+{
+  "name": "lubycon-frontend-libraries",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "new-package": "hygen packages new",
+    "postinstall": "husky install",
+    "build:all": "yarn workspaces foreach -pt run build",
+    "test:all": "yarn workspaces foreach -pt run test",
+    "docs:generate": "typedoc --tsconfig tsconfig.doc.json",
+    "docs:deploy": "node script/deploy.js",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "author": "Lubycon<lubycon@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lubycon/lubycon-frontend-libraries"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.17"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "@yarnpkg/pnpify": "^3.0.0-rc.14",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "gh-pages": "^3.2.3",
+    "husky": "^7.0.1",
+    "hygen": "^6.1.0",
+    "lerna": "^3.22.0",
+    "lint-staged": "^11.1.1",
+    "pinst": "^2.1.6",
+    "prettier": "^2.4.1",
+    "typedoc": "^0.21.9",
+    "typescript": "^4.3.5"
+  },
+  "resolutions": {
+    "@lerna/version": "patch:@lerna/version@npm:3.20.2#.yarn-patches/@lerna/version.patch",
+    "@lerna/npm-publish": "patch:@lerna/npm-publish@npm:3.18.5#.yarn-patches/@lerna/npm-publish.patch",
+    "@lerna/package": "patch:@lerna/package@npm:3.16.0#.yarn-patches/@lerna/package.patch",
+    "@lerna/package-graph": "patch:@lerna/package-graph@npm:3.18.5#.yarn-patches/@lerna/package-graph.patch",
+    "@lerna/pack-directory": "patch:@lerna/pack-directory@npm:3.16.4#.yarn-patches/@lerna/pack-directory.patch"
+  },
+  "packageManager": "yarn@3.2.0"
+}

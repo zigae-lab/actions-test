@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Set Git User
+        run: |
+          git config --global user.name "lubycon-admin"
+          git config --global user.email "lubycon@gmail.com"
+          git remote set-url origin https://lubycon-admin:$GH_TOKEN@github.com/Lubycon/lubycon-frontend-libraries.git
+        env:
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      - name: Pull main branch
+        run: git checkout "${GITHUB_REF:11}" && git pull
+      - name: Validate dependencies
+        run: yarn install --immutable --immutable-cache
+      - name: Build
+        run: yarn build:all
+      - name: Test
+        run: yarn test:all
+      - name: Set NPM
+        run: |
+          echo //registry.npmjs.org/:_authToken=$NPM_TOKEN | tee .npmrc $HOME/.npmrc > /dev/null
+          npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish
+        id: publish
+        run: |
+          yarn lerna version --conventional-commits --yes
+          yarn lerna publish from-git --yes
+        env:
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
+        
